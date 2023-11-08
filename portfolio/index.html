@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetMe - Resume Website Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    .facebook {
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+        transition: background-color 0.3s ease;
+      }
+  
+      .facebook:hover {
+        background-color: #4267B2;
+      }
+      .admin-profile{
+    list-style: none;
+}
+.admin-profile .pro-title {
+    font-weight: 700;
+    color: #040404;
+    position: relative;
+    width: 120px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.admin-profile .pro-title:after {
+    position: absolute;
+    content: ':';
+    color: #040404;
+    font-size: 14px;
+    left: 100px;
+}
+
+.timeline {
+    position: relative;
+}
+
+
+.timeline li {
+    padding: 0 20px 20px 30px;
+    list-style: none;
+}
+
+.timeline li .content-text {
+    background: #f2f2f2;
+    padding: 20px;
+} 
+.timeline li .line-title {
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.timeline li span {
+    font-size: 12px;
+    padding: 9px 0;
+    display: block;
+}
+
+.timeline li .line-text {
+    color: #888;
+    line-height: 18px;
+}
+
+.counter-section{
+        background-image: url(./bg-1.jpg);
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+         }
+         .section-padding{
+        padding: 80px;
+      }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+            <img class="navbar-brand" src="./logo.png" style="width:200px;height:60px">
+        </div>
+        <button class="navbar-toggler-icon text-info mt-2 border-0 bg-transparent " style="margin-right: 110px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        </button>
+    </nav>
+    <img src="./img1.jpg" alt="" class="w-100" style="height: 680px;">
+   
+    <div class="carousel-caption d-none d-md-block">
+        <h5 style="font-size: 50px; font-family: shadows into light,cursive;font-weight: 500;">Hi This is</h5>
+        <h2 style="font-size: 40px; font-family: source sans pro,sans-serif;letter-spacing: 10px;font-weight: 700;">TOM SAULNIER</h2>
+        <p style="font-size: 30px;font-family: shadows into light,cursive;font-weight: 400;">Front-end Web Developer and Graphic Designer</p>
+        <div class="d-flex  justify-content-center">
+            <a class="btn btn-square btn-outline-light me-3 rounded-5" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-outline-light me-3 rounded-5" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-outline-light me-3 rounded-5" href=""><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-square btn-outline-light me-3 rounded-5" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-square btn-outline-light me-0 rounded-5" href=""><i class="fab fa-google"></i></a>
+        </div>
+        <button class="btn btn-primary m-5 rounded-0">GET A FREE QUOTE</button>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+    
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+          <div>
+            <ul class=" navbar-nav " data-bs-spy="scroll">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#portfolios">Work</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="shadow" style="width: 82%;">
+                    <img class="w-100" src="./about-1.jpg" style="border:8px solid white;">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-5">
+                <h3 id="about" style="font-size: 38px;font-family: source sans pro,sans-serif;font-weight: 700; color: #666;">Hi Guys!</h3>
+                <p style="font-weight: 400;
+                font-family: source sans pro,sans-serif;
+                margin: 0;
+                font-size: 14px;line-height: 25px;">Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum eleifend sollicitudin lacinia justo id turpis. Nec convallis integer. Odio eget duis. Nulla aenean et. Blandit varius sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut sollicitudin. Et est a nam dolores eget itaque sagittis et parturient duis est eleifend sociis rutrum odio viverra integer.</p>
+                    <div class="about-profile mb-3">
+                        <ul class="admin-profile" style="list-style: none;">
+                        <li style="list-style: none;display: list-item;"><span class="pro-title"> Name </span> <span class="pro-detail">Tom Saulnier</span></li>
+                        <li style="list-style: none;display: list-item;"><span class="pro-title"> Age </span> <span class="pro-detail">25 Years</span></li>
+                        <li style="list-style: none;display: list-item;"><span class="pro-title"> Experience </span> <span class="pro-detail">4 Years</span></li>
+                        <li style="list-style: none;display: list-item;"><span class="pro-title"> Country </span> <span class="pro-detail">USA</span></li>
+                        <li style="list-style: none;display: list-item;"><span class="pro-title"> Location </span> <span class="pro-detail">San Francisco, CA</span></li>
+                        <li style="list-style: none;display: list-item;"><span class="pro-title"> e-mail </span> <span class="pro-detail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d08000c04012d08150c001d0108430e0200">[email&#160;protected]</a></span></li>
+                        <li style="list-style: none;display: list-item;"><span class="pro-title"> Phone </span> <span class="pro-detail">+ (00) 123 456 789</span></li>
+                        <li style="list-style: none;display: list-item;"><span class="pro-title"> Freelance </span> <span class="pro-detail">Available</span></li>
+                        </ul>
+                        <button type="button" class="btn btn-info ms-3">
+                            <i class="fas fa-download"></i> Download CV
+                        </button>
+                        
+                        <button type="button" class="btn btn-danger">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </button>
+                        </div>    
+                    </div>
+        </div>
+    </div>
+    <div class="bg-body-tertiary"> <br>
+        <h2 class="text-center" style="font-size: 38px;
+        letter-spacing: 1px;font-weight: 700;
+        font-family: source sans pro,sans-serif;margin-bottom: 48px;
+        position: relative;" id="services">What I do</h2>
+        <div class="row g-0 ">
+            <div class="col-md-3 mb-5">
+                <div class="card ms-5" style="width: 16rem;">
+                    <i class="fas fa-th icon fa-3x text-center text-info mt-1"></i>
+                    <div class="card-body">
+                    <h5 class="card-title text-center" style="font-size: 15px; color:grey">FRONT-END-DEVELOPMENT</h5>
+                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam minima quis beatae</p>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5">
+                <div class="card ms-5" style="width: 16rem;">
+                    <i class="fa-solid fa-layer-group fa-3x text-center text-info mt-1"></i>
+                    <div class="card-body">
+                    <h5 class="card-title text-center" style="font-size: 15px; color:grey">GRAPHIC DESIGN</h5>
+                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam minima quis beatae</p>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5">
+                <div class="card ms-5" style="width: 16rem;">
+                    <i class="fa-solid fa-briefcase fa-3x text-center text-info mt-1"></i>
+                    <div class="card-body">
+                    <h5 class="card-title text-center" style="font-size: 15px; color:grey">BUSINESS BRANDING</h5>
+                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam minima quis beatae</p>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5">
+                <div class="card ms-5" style="width: 16rem;">
+                    <i class="fa-regular fa-comments fa-3x text-center text-info mt-1"></i>
+                    <div class="card-body">
+                    <h5 class="card-title text-center" style="font-size: 15px; color:grey">CONSULTANCY</h5>
+                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam minima quis beatae</p>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+ </div>
+
+ <br><br>
+         <div id="resume" class="me-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                    
+                            <ul class="timeline">
+                                <li>
+                                    
+                                    <h2 class="timelin-title">
+                                        <i class="fas fa-graduation-cap"></i> Education
+                                    </h2>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">Bsc In CSE - Yale University</h3>
+                                        <span>2012 - 2016</span>
+                                        <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">Higher Secondary School - San Francisco College</h3>
+                                        <span>2010 - 2012</span>
+                                        <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">Secondary School - Labratory High School</h3>
+                                        <span>2005 - 2010</span>
+                                        <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+            
+                            <ul class="timeline">
+                                <li>
+                                    
+                                    <h2 class="timelin-title">
+                                        <i class="fas fa-briefcase"></i> Experience
+                                    </h2>
+                                    
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">Art Director - Tesla Inc.</h3>
+                                        <span>Jan 2018 - Present</span>
+                                        <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">UX/UI Designer - Samsung</h3>
+                                        <span>Nov 2016 - Dec 2017</span>
+                                        <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">Intern UI Designer - UIdeck</h3>
+                                        <span>Mar 2015 - Oct 2016</span>
+                                        <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                                    </div>
+                                </li>
+                            </ul>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="bg-body-tertiary" id="portfolios">
+            <h2 style="font-size: 38px;
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 1;font-weight: 700;
+    font-family: source sans pro,sans-serif;" class="mb-5">My Remarkable works</h2>
+    <div class="container text-center">
+    <button class="btn btn-outline-info ">All</button>
+    <button class="btn btn-info ">DESIGN</button>
+    <button class="btn btn-info ">DEVELOPMENT</button>
+    <button class="btn btn-info ">PRINT</button>
+   
+    </div>
+     <br>
+    <div  class="container d-flex justify-content-center  p-3">
+      <img src="./img-1.jpg" alt="" style="width: 20%;height: 20%;" class="img-fluid me-4">
+      <img src="./img-2.jpg" alt="" style="width: 20%;height: 20%;"class="img-fluid me-4">
+      <img src="./img-3.jpg" alt="" style="width: 20%;height: 20%; "class="img-fluid me-4">
+    </div>
+    <div  class="container d-flex justify-content-center  p-3">
+      <img src="./img-4.jpg" alt="" style="width: 20%;height: 20%;"class="img-fluid me-4">
+      <img src="./img-5.jpg" alt="" style="width: 20%;height: 20%;"class="img-fluid me-4">
+      <img src="./img-6.jpg" alt="" style="width: 20%;height: 20%;"class="img-fluid me-4">
+    </div>
+        </div>
+        <section class="counter-section section-padding mt-5">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-3 col-sm-6">
+                  <center><i class="fa-solid fa-briefcase fa-2x text-center text-info mt-0"></i>
+                  <h2 class="text-white"><b>250</b></h2>
+                  <h5 class="text-white">PROJECT WARNING</h5></center>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <center><i class="fa-regular fa-circle-check fa-2x text-center text-info mt-1"></i>
+                  <h2 class="text-white"><b>950</b></h2>
+                  <h5 class="text-white">PROJECT DONE</h5></center>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <center><i class="fa-regular fa-gem fa-2x text-center text-info mt-1"></i>
+                  <h2 class="text-white"><b>150</b></h2>
+                  <h5 class="text-white">AWARDS</h5></center>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <center><i class="fa-regular fa-heart fa-2x text-center text-info mt-1"></i>
+                  <h2 class="text-white"><b>299</b></h2>
+                  <h5 class="text-white">HAPPY CLIENTS</h5></center>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </section>
+          <div class="container mt-5  " >
+            <div class="row">
+              <div class="col-lg-6">
+                <h2 class="contact mb-3" id="contact">CONTACT FORM</h2>
+             <form class=" needs-validation" novalidate>
+              <div class="row g-3">
+                 <div class="col-6">
+                  <input type="text" class="form-control mb-2" id=valid1 placeholder="Name " required>
+                  <div class="invalid-feedback">
+              please enter the name
+                  </div>
+                 </div>
+                 <div class="col-lg-6">
+                  <input type="text" class="form-control mb-2" placeholder="Email"  id=valid2 required>
+                  <div class="invalid-feedback">
+              please enter the email
+                  </div>
+                 </div>
+               </div> 
+               <input type="text" class="form-control mb-2" placeholder="Subject" id="valid" required>
+               <div class="invalid-feedback">
+              please enter the subject
+                  </div>
+                  <div>
+               <textarea name="" id="" cols="20" rows="4" placeholder="Message" class="form-control mb-1" required></textarea>
+               <div class="invalid-feedback">
+               Enter your message
+                  </div>
+               </div>
+               <button class="btn btn-primary text-white">SEND MESSAGE</button><br>
+               </form>
+              </div>
+            
+            
+            <script>
+              (() => {
+          'use strict'
+        
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation')
+        
+          // Loop over them and prevent submission
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+        
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+            </script>
+        
+            <div class="col-lg-6">
+              <h2 class="contact mb-3">CONTACT ADDRESS</h2>
+              <div class="card">
+               <div class="card-body ">
+               <i class="fa-solid fa-location-dot fa-2x  text-info mt-1 "></i><span>San Fransicsco,CA</span><br><br>
+               <i class="fa-solid fa-envelope fa-2x  text-info mt-1"></i><span>hello@tom.com</span><br><br>
+               <i class="fa-solid fa-phone fa-2x  text-info mt-1"></i><span>+(00)8748990</span>
+          </div>
+        </div>
+            </div>
+           </div><br>
+            <iframe
+                width="100%"
+                height="450"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.4051692446453!2d-122.08373998417306!3d37.421999779859295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbee48241ed91%3A0x8f0f4a75d33d64a4!2sGolden+Gate+Bridge!5e0!3m2!1sen!2sus!4v1551755302530"
+            ></iframe>
+        </div>
+        
+        <footer class="py-5 bg-dark" style="height: 60%;">
+            <div class="d-flex  justify-content-center">
+            <a class="btn btn-square btn-outline-light me-2 rounded-5" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-outline-light me-2 rounded-5" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-outline-light me-2 rounded-5" href=""><i class="fab fa-instagram"></i></a>
+            
+            <a class="btn btn-square btn-outline-light me-2 rounded-5" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-square btn-outline-light me-2 rounded-5" href=""><i class="fab fa-google"></i></a>
+         </div>
+            <p class="text-center text-white">© 2023 Company, Inc</p>
+          </footer>
+</body>
+</html>
